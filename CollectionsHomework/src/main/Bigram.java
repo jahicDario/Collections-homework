@@ -9,7 +9,7 @@ public class Bigram {
 
 	public Map<String, Integer> ispisiFrekPojavljivanjaBigrama(String s) {
 		Map<String, Integer> m = new HashMap<>();
-		for (int i = 0; i < s.length()-2; i++) {
+		for (int i = 0; i < s.length()-1; i++) {
 			String s2 = s.substring(i, i+2);
 			if (m.containsKey(s2)) {
 				Iterator entries = m.entrySet().iterator();
